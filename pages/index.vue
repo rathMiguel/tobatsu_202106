@@ -30,8 +30,8 @@
             sortable: true,
           },
           {
-            key: 'remark',
-            label: '備考',
+            key: 'start',
+            label: '受注開始',
             sortable: true,
           },
           {
