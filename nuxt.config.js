@@ -2,6 +2,8 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  loading: { color: '#0A428C' },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'LoveLoveWedding大作戦2021 討伐リスト',

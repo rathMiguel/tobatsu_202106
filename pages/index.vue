@@ -3,7 +3,8 @@
     <div class=row>
       <div class="col-md-12">
         <h1 class="title">LoveLoveWedding大作戦2021 討伐リスト</h1>
-        <b-table hover :items="items" :fields="fields"></b-table>
+        <p v-if="!items">loading...</p>
+        <b-table v-else hover :items="items" :fields="fields"></b-table>
       </div>
     </div>
   </div>
@@ -11,6 +12,7 @@
 
 <script>
   export default {
+    loading: false,
     data() {
       return {
         fields: [
@@ -45,8 +47,7 @@
             sortable: true,
           }
         ],
-        items: [
-        ]
+        items: null
       }
     },
     mounted(){
