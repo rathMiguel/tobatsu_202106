@@ -42,6 +42,11 @@
             sortable: true,
           },
           {
+            key: 'md',
+            label: '平地/MD',
+            sortable: true,
+          },
+          {
             key: 'lv',
             label: 'LV制限',
             sortable: true,
@@ -65,7 +70,11 @@
 .container {
   margin: 0 auto;
   min-height: 100vh;
-  max-width: 1200px;
+  max-width: 1300px;
+}
+
+table th{
+  white-space: nowrap; 
 }
 
 .title {
