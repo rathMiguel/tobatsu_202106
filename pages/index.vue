@@ -2,7 +2,7 @@
   <div class="container">
     <div class=row>
       <div class="col-md-12">
-        <h1 class="title">LoveLoveWedding大作戦2021 討伐リスト</h1>
+        <h1 class="title">ゲフェンメロンフェスタ 討伐リスト</h1>
         <p v-if="!items">loading...</p>
         <b-table v-else hover :items="items" :fields="fields"></b-table>
       </div>
@@ -28,17 +28,12 @@
           },
           {
             key: 'point',
-            label: 'ブライダルポイント',
-            sortable: true,
-          },
-          {
-            key: 'start',
-            label: '受注開始',
+            label: 'メロメロポイント',
             sortable: true,
           },
           {
             key: 'place',
-            label: '場所',
+            label: '出現場所',
             sortable: true,
           },
           {
@@ -56,7 +51,7 @@
       }
     },
     mounted(){
-      this.$axios.get(`https://api.steinhq.com/v1/storages/60bf188fd2a8585c5af281d1/2021.06`)
+      this.$axios.get(`https://api.steinhq.com/v1/storages/60bf188fd2a8585c5af281d1/2021.07`)
       .then((res) => {
         return this.items = res.data
       }).catch((e => {
