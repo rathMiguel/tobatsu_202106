@@ -6,7 +6,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'LoveLoveWedding大作戦2021 討伐リスト',
+    title: 'ゲフェンメロンフェスタ 討伐リスト',
     htmlAttrs: {
       lang: 'ja'
     },
